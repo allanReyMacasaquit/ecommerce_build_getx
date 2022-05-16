@@ -1,5 +1,5 @@
 import 'package:ecommerce_build_getx/routes/routes.dart';
-import 'package:ecommerce_build_getx/views/home/Homepage.dart';
+import 'package:ecommerce_build_getx/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,14 +18,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      darkTheme: ThemeData(
-        primarySwatch: Colors.yellow,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       getPages: Routes.routes,
       initialRoute: Routes.INITIAL,
       initialBinding: InitialBinding(),
