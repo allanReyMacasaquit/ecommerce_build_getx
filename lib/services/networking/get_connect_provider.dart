@@ -3,7 +3,7 @@ import 'package:ecommerce_build_getx/services/networking/interceptors/request_in
 import 'package:ecommerce_build_getx/services/networking/interceptors/response_interceptor.dart';
 import 'package:get/get_connect.dart';
 
-typedef Json = Map<String, dynamic>;
+typedef JSON = Map<String, dynamic>;
 
 class GetConnectProvider extends GetConnect {
   @override

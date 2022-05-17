@@ -40,14 +40,14 @@ class HomePage extends StatelessWidget {
     return IconButton(
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
+      onPressed: () => {_homeController.goToTab(page)},
       icon: Icon(
         icon,
+        size: 22,
         color: _homeController.currentPage == page
             ? Colors.blue.shade700
             : Colors.grey,
-        size: 22,
       ),
-      onPressed: () => {_homeController.goToTab(page)},
     );
   }
 }

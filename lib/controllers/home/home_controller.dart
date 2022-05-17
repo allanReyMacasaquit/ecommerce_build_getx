@@ -6,7 +6,7 @@ import '../../views/home/tabs/favorite_tab.dart';
 import '../../views/home/tabs/user_tab.dart';
 
 class HomeController extends GetxController {
-  late PageController pageController;
+  PageController pageController = PageController(initialPage: 0);
 
   var currentPage = 0.obs;
 
@@ -19,7 +19,7 @@ class HomeController extends GetxController {
 
   @override
   void onInit() {
-    pageController = PageController(initialPage: 0);
+    pageController;
     super.onInit();
   }
 
